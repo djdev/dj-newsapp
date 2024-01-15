@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import News from "./News";
+import Sidenews from "./Sidenews";
 
 const availableNewsOptions = {
   news1: {
@@ -36,6 +37,10 @@ const App = () => {
         <div className="col s8">
           <News news={newsOptions.news1} />
           <News news={newsOptions.news2} />
+        </div>
+
+        <div className="col s4">
+          <Sidenews news={newsOptions.news3} />
         </div>
       </div>
     </div>
